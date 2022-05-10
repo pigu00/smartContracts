@@ -20,8 +20,8 @@ contract MyContract {
 
     }
         
-    function getPerrosAdoptados () public returns(address[16]){
-
+    function getPerrosAdoptados () public view returns(address[16] memory){
+        return perrosAdoptados;
     }
 
 }
